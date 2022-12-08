@@ -2,11 +2,11 @@
 $name = readline('Ваше имя: ');
 $ages = readline('Введите ваш возраст: ');
 $count = readline('Сколько задач вас ожидает: ');
-$todoArray = array();
-$todoHours = array();
-$todoResultHours = 0;
+$todoArray = array(); // Массив текста задач
+$todoHours = array(); // Массив часов задач
+$todoResultHours = 0; // Переменная суммы часов
 
-for ($i = 1; $i <= $count; $i++) {
+for ($i = 1; $i <= $count; $i++) {  
     $todoArray[$i] = readline("Какая {$i} задача стоит перед вами сегодня?: ");
     $todoHours[$i] = readline("Сколько времени уйдет на задачу № {$i}: ");
 }
